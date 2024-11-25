@@ -1,0 +1,251 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 225, 218);
+    margin: 0;
+    padding: 0;
+}
+/* Style for name and register number in the top right corner */
+.student-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff; /* Adjust color to match your design */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: slight background for readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Banner Section - Farm Name */
+.banner {
+    text-align: center;
+    padding: 60px 0;
+    color: #111010;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 400px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: #f0b429;
+}
+
+/* About Us Section */
+#about {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+#about h2 {
+    font-size: 2em;
+    color: #181313;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* About Us Images */
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.about-image {
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Products Section */
+#products {
+    padding: 2em;
+    text-align: center;
+    background-color: #f7fff1;
+}
+
+#products h2 {
+    font-size: 2.5em;
+    color: #3e6635;
+    margin-bottom: 1em;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product img {
+    width: 80%;
+    height: 100;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    color: #3e6635;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    padding: 2em;
+    text-align: center;
+    background-color: #eaf4e4;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #3e6635;
+    margin-bottom: 1em;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+    display: block;
+    font-size: 1em;
+    color: #3e6635;
+    margin-bottom: 8px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #a3d09a;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#form-response {
+    margin-top: 1em;
+    color: #3e6635;
+    font-weight: bold;
+}
